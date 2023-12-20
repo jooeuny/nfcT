@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>선생님 교무실 여부</title>
+
+        <style>
+            .container {
+                width: 500px;
+                height: 500px;
+                text-align: center;
+            }
+            #img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img id="img" src="./images/1.png" />
+            <button onclick = "toggleImg()">상태 변경</button>
+        </div>
+        <script>
+            function toggleImg() {
+                var img = document.getElementById("img");
+                if (img.src.includes("1.png")) {
+                    img.src = "./images/2.png";
+                }
+                else {
+                    img.src = "./images/1.png";
+                }
+            }
+        </script>
+    </body>
+</html>
